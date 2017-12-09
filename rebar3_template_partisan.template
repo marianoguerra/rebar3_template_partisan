@@ -12,8 +12,10 @@
 {template, "rebar3_template_partisan_Makefile.tpl", "{{name}}/Makefile"}.
 {file, "rebar3_template_partisan_config.schema.tpl", "{{name}}/config/{{name}}.schema"}.
 
+{template, "rebar3_template_partisan.erl.tpl", "{{name}}/apps/{{name}}/src/{{name}}.erl"}.
 {template, "rebar3_template_partisan_app.erl.tpl", "{{name}}/apps/{{name}}/src/{{name}}_app.erl"}.
 {template, "rebar3_template_partisan_sup.erl.tpl", "{{name}}/apps/{{name}}/src/{{name}}_sup.erl"}.
+{template, "rebar3_template_partisan_handler.erl.tpl", "{{name}}/apps/{{name}}/src/{{name}}_handler.erl"}.
 {template, "rebar3_template_partisan_peer_service.erl.tpl", "{{name}}/apps/{{name}}/src/{{name}}_peer_service.erl"}.
 
 {file, "rebar3_template_partisan_admin_cmd.tpl", "{{name}}/config/admin_bin"}.
