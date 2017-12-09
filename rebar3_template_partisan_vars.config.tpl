@@ -8,5 +8,6 @@
 {sasl_log_dir,      "./log/sasl"}.
 
 {partisan_peer_port, 8099}.
+{partisan_peer_ip, "127.0.0.1"}.
 
 {crash_dump, "erl_crash.dump"}.

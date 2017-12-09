@@ -10,7 +10,7 @@
 {template, "rebar3_template_partisan_gitignore.tpl", "{{name}}/.gitignore"}.
 {template, "rebar3_template_partisan_README.rst.tpl", "{{name}}/README.rst"}.
 {template, "rebar3_template_partisan_Makefile.tpl", "{{name}}/Makefile"}.
-{template, "rebar3_template_partisan_config.schema.tpl", "{{name}}/config/{{name}}.schema"}.
+{file, "rebar3_template_partisan_config.schema.tpl", "{{name}}/config/{{name}}.schema"}.
 
 {template, "rebar3_template_partisan_app.erl.tpl", "{{name}}/apps/{{name}}/src/{{name}}_app.erl"}.
 {template, "rebar3_template_partisan_sup.erl.tpl", "{{name}}/apps/{{name}}/src/{{name}}_sup.erl"}.

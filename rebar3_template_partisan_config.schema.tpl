@@ -4,13 +4,13 @@
 %% @doc ip to listen to for partisan peer service
 {mapping, "partisan.peer.ip", "partisan.peer_ip", [
   {datatype, string},
-  {default, "127.0.0.1"}
+  {default, "{{partisan_peer_ip}}" }
 ]}.
 
 %% @doc port to listen to for partisan peer service
 {mapping, "partisan.peer.port", "partisan.peer_port", [
   {datatype, integer},
-  {default, 8099}
+  {default, {{partisan_peer_port}} }
 ]}.
 
 %% @doc backend for peer service operations
