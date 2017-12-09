@@ -10,6 +10,7 @@
 {template, "rebar3_template_partisan_gitignore.tpl", "{{name}}/.gitignore"}.
 {template, "rebar3_template_partisan_README.rst.tpl", "{{name}}/README.rst"}.
 {template, "rebar3_template_partisan_Makefile.tpl", "{{name}}/Makefile"}.
+{template, "rebar3_template_partisan_config.schema.tpl", "{{name}}/config/{{name}}.schema"}.
 
 {template, "rebar3_template_partisan_app.erl.tpl", "{{name}}/apps/{{name}}/src/{{name}}_app.erl"}.
 {template, "rebar3_template_partisan_sup.erl.tpl", "{{name}}/apps/{{name}}/src/{{name}}_sup.erl"}.
@@ -17,7 +18,6 @@
 
 {file, "rebar3_template_partisan_admin_cmd.tpl", "{{name}}/config/admin_bin"}.
 
-{template, "rebar3_template_partisan_config.schema.tpl", "{{name}}/priv/01-{{name}}.schema"}.
 {file, "rebar3_template_partisan_advanced.config.tpl", "{{name}}/config/advanced.config"}.
 {template, "rebar3_template_partisan_vars.config.tpl", "{{name}}/config/vars.config"}.
 {template, "rebar3_template_partisan_vars_dev1.config.tpl", "{{name}}/config/vars_dev1.config"}.

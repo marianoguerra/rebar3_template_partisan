@@ -10,11 +10,6 @@
         ]
  },
 
- {partisan, [{peer_ip, {127,0,0,1}},
-             {peer_port, {{ partisan_peer_port }} },
-             {partisan_peer_service_manager,
-              partisan_hyparview_peer_service_manager}]},
-
  %% Lager config
  %% see https://github.com/basho/lager#configuration
  %% see https://github.com/basho/lager/blob/master/src/lager.app.src

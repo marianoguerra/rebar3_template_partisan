@@ -18,6 +18,7 @@
         {overlay, [
             {mkdir, "etc"},
             {mkdir, "bin"},
+            {template, "./config/{{name}}.schema", "share/schema/21-{{name}}.schema"},
             {template, "./config/admin_bin", "bin/{{ name }}-admin"},
             {template, "./config/advanced.config", "etc/advanced.config"}
         ]}
