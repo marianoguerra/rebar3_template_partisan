@@ -36,9 +36,20 @@ Clustering
     make dev2-console
     make dev3-console
 
-    # on dev1 node shell
-    ({{name}}1@127.0.0.1)1> {{name}}_peer_service:join('{{name}}2@127.0.0.1').
-    ({{name}}1@127.0.0.1)2> {{name}}_peer_service:join('{{name}}3@127.0.0.1').
+    # join all nodes:
+    make devrel-join
+
+    # check node members
+    make devrel-status
+
+    # join node1 to node2 manually:
+    ./_build/dev1/rel/{{name}}/bin/{{name}}-admin cluster join {{name}}2@127.0.0.1
+
+    # check node1 members
+    ./_build/dev1/rel/{{name}}/bin/{{name}}-admin cluster members
+
+    # check node1 connections
+    ./_build/dev1/rel/{{name}}/bin/{{name}}-admin cluster connections
 
 Quit
 ----

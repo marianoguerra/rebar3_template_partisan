@@ -53,7 +53,12 @@ devrel-start:
 	for d in $(BASEDIR)/_build/dev*; do $$d/rel/{{ name }}/bin/$(APPNAME) start; done
 
 devrel-status:
-	$(BASEDIR)/_build/dev1/rel/{{ name }}/bin/$(APPNAME)-admin member-status
+	for d in $(BASEDIR)/_build/dev*; do $$d/rel/{{ name }}/bin/$(APPNAME)-admin cluster members; done
+
+devrel-join:
+	for d in $(BASEDIR)/_build/dev{2,3}; do $$d/rel/{{ name }}/bin/$(APPNAME)-admin cluster join {{ name }}1@127.0.0.1; done
+	for d in $(BASEDIR)/_build/dev{1,3}; do $$d/rel/{{ name }}/bin/$(APPNAME)-admin cluster join {{ name }}2@127.0.0.1; done
+	for d in $(BASEDIR)/_build/dev{1,2}; do $$d/rel/{{ name }}/bin/$(APPNAME)-admin cluster join {{ name }}3@127.0.0.1; done
 
 devrel-ping:
 	for d in $(BASEDIR)/_build/dev*; do $$d/rel/{{ name }}/bin/$(APPNAME) ping; done

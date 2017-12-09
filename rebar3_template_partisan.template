@@ -15,9 +15,13 @@
 {template, "rebar3_template_partisan_sup.erl.tpl", "{{name}}/apps/{{name}}/src/{{name}}_sup.erl"}.
 {template, "rebar3_template_partisan_peer_service.erl.tpl", "{{name}}/apps/{{name}}/src/{{name}}_peer_service.erl"}.
 
+{file, "rebar3_template_partisan_admin_cmd.tpl", "{{name}}/config/admin_bin"}.
+
 {template, "rebar3_template_partisan_config.schema.tpl", "{{name}}/priv/01-{{name}}.schema"}.
 {file, "rebar3_template_partisan_advanced.config.tpl", "{{name}}/config/advanced.config"}.
 {template, "rebar3_template_partisan_vars.config.tpl", "{{name}}/config/vars.config"}.
 {template, "rebar3_template_partisan_vars_dev1.config.tpl", "{{name}}/config/vars_dev1.config"}.
 {template, "rebar3_template_partisan_vars_dev2.config.tpl", "{{name}}/config/vars_dev2.config"}.
 {template, "rebar3_template_partisan_vars_dev3.config.tpl", "{{name}}/config/vars_dev3.config"}.
+
+{chmod, "{{name}}/config/admin_bin", 8#744}.

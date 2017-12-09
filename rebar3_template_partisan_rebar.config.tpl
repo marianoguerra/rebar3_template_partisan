@@ -3,7 +3,7 @@
 {deps, [
     lager,
     {cuttlefish, "2.0.12"},
-    {partisan, "1.3.3"}
+    {partisan, "1.3.4"}
 ]}.
 
 {relx, [{release, { {{ name }} , "0.1.0"},
@@ -18,6 +18,7 @@
         {overlay, [
             {mkdir, "etc"},
             {mkdir, "bin"},
+            {template, "./config/admin_bin", "bin/{{ name }}-admin"},
             {template, "./config/advanced.config", "etc/advanced.config"}
         ]}
 ]}.
