@@ -1,0 +1,23 @@
+{description, "Rebar3 Partisan Application"}.
+{variables, [
+    {name, "mypartisan", "Name of the application"},
+    {desc, "A Partisan Application", "Short description of the app"}
+]}.
+
+{template, "rebar3_template_partisan.app.src.tpl", "{{name}}/apps/{{name}}/src/{{name}}.app.src"}.
+{template, "rebar3_template_partisan_rebar.config.tpl", "{{name}}/rebar.config"}.
+{template, "rebar3_template_partisan_editorconfig.tpl", "{{name}}/.editorconfig"}.
+{template, "rebar3_template_partisan_gitignore.tpl", "{{name}}/.gitignore"}.
+{template, "rebar3_template_partisan_README.rst.tpl", "{{name}}/README.rst"}.
+{template, "rebar3_template_partisan_Makefile.tpl", "{{name}}/Makefile"}.
+
+{template, "rebar3_template_partisan_app.erl.tpl", "{{name}}/apps/{{name}}/src/{{name}}_app.erl"}.
+{template, "rebar3_template_partisan_sup.erl.tpl", "{{name}}/apps/{{name}}/src/{{name}}_sup.erl"}.
+{template, "rebar3_template_partisan_peer_service.erl.tpl", "{{name}}/apps/{{name}}/src/{{name}}_peer_service.erl"}.
+
+{template, "rebar3_template_partisan_config.schema.tpl", "{{name}}/priv/01-{{name}}.schema"}.
+{file, "rebar3_template_partisan_advanced.config.tpl", "{{name}}/config/advanced.config"}.
+{template, "rebar3_template_partisan_vars.config.tpl", "{{name}}/config/vars.config"}.
+{template, "rebar3_template_partisan_vars_dev1.config.tpl", "{{name}}/config/vars_dev1.config"}.
+{template, "rebar3_template_partisan_vars_dev2.config.tpl", "{{name}}/config/vars_dev2.config"}.
+{template, "rebar3_template_partisan_vars_dev3.config.tpl", "{{name}}/config/vars_dev3.config"}.
