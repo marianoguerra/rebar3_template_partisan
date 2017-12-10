@@ -51,6 +51,14 @@ Clustering
     # check node1 connections
     ./_build/dev1/rel/{{name}}/bin/{{name}}-admin cluster connections
 
+Ping node2 from node1 using partisan::
+
+    1> {{name}}:ping('{{name}}2@127.0.0.1').
+    ok
+
+    % check logs/console on node2, you should see:
+    got msg ping
+
 Quit
 ----
 
