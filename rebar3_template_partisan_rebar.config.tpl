@@ -3,7 +3,7 @@
 {deps, [
     lager,
     {cuttlefish, "2.0.12"},
-    {partisan, "1.4.1"}
+    {partisan, "3.0.0"}
 ]}.
 
 {relx, [{release, { {{ name }} , "0.1.0"},
